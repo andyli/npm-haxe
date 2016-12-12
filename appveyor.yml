@@ -7,10 +7,10 @@ environment:
 install:
   - ps: Install-Product node $env:nodejs_version
   - node --version
-  - npm --version
-  - npm install
+  - yarn --version
+  - yarn install
 
 build: off
 
 test_script:
-  - npm test
+  - yarn test
